@@ -33,7 +33,7 @@ gnuradio-companion
 
 required to recognize connecting/disconnecting usb
 ```bash
-cd ~/gr38/src/uhd
+cd ~/gr38/src/uhd/host/utils
 sudo cp uhd-usrp.rules /etc/udev/rules.d/
 sudo udevadm control --reload-rules
 sudo udevadm trigger
