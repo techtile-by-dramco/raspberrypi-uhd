@@ -1,7 +1,7 @@
 # Installation guide UHD on RPI 4
 
 ## Raspi-config
-- Boot in desktop so we could access remotly with VNC viewer
+- Boot in desktop so we could access remotely with VNC viewer
 - Enable VNC in the interface
 - Set resolution
 - Change the hostname
