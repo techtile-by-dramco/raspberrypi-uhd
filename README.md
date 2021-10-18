@@ -20,6 +20,100 @@ Execute upgrade installs newer versions of the packages you have. After updating
 sudo apt-get update && sudo apt-get upgrade
 ```
 
+```bash
+sudo apt update --allow-releaseinfo-change
+sudo apt upgrade
+sudo apt install git cmake g++ libboost-all-dev libgmp-dev swig python3-numpy \
+python3-mako python3-sphinx python3-lxml doxygen libfftw3-dev \
+libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 \
+liblog4cpp5-dev libzmq3-dev python3-yaml python3-click python3-click-plugins \
+python3-zmq python3-scipy libpthread-stubs0-dev libusb-1.0-0 libusb-1.0-0-dev \
+libudev-dev python3-setuptools build-essential liborc-0.4-0 liborc-0.4-dev \
+python3-gi-cairo libeigen3-dev libsndfile1-dev
+```
+
+```bash
+cd
+git clone https://github.com/EttusResearch/uhd.git
+cd ~/uhd
+git checkout v4.1.0.4
+cd host
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../
+make -j4
+make test
+sudo make install
+```bash
+sudo ldconfig
+sudo uhd_images_downloader
+cd ~/uhd/host/utils
+sudo cp uhd-usrp.rules /etc/udev/rules.d/
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
+
+
+# restart terminal
+```bash
+uhd_usrp_probe
+```
+
+
+
+```bash
+cd
+git clone --recursive https://github.com/gnuradio/volk.git
+cd volk
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 ../
+make -j6
+make test
+sudo make install
+sudo ldconfig
+
+```bash
+python3 -m pip install pytest numpy scipy
+git clone https://github.com/pybind/pybind11.git
+cd pybind11
+cmake -DDOWNLOAD_CATCH=1
+mkdir build
+cd build
+cmake ..
+sudo make install
+cd ..
+```
+
+
+```bash
+cd
+git clone https://github.com/gnuradio/gnuradio.git
+cd gnuradio
+git checkout maint-3.9
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 ../
+make -j6
+make test
+sudo make install
+sudo ldconfig
+```
+
+
+
+# add to $HOME/.bashrc (only for CLI):
+```bash
+export LD_LIBRARY_PATH=/usr/local/lib
+export PYTHONPATH=/usr/local/lib/python3/dist-packages
+
+source ~/.bashrc
+```
+
+
+
+# OLD way
+
 ## Build the GNURadio and UHD from source with PyBombs
 ```bash
 sudo apt install python3-pip, xterm
