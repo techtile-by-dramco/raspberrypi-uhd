@@ -29,7 +29,7 @@ libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 \
 liblog4cpp5-dev libzmq3-dev python3-yaml python3-click python3-click-plugins \
 python3-zmq python3-scipy libpthread-stubs0-dev libusb-1.0-0 libusb-1.0-0-dev \
 libudev-dev python3-setuptools build-essential liborc-0.4-0 liborc-0.4-dev \
-python3-gi-cairo libeigen3-dev libsndfile1-dev
+python3-gi-cairo libeigen3-dev libsndfile1-dev xterm
 ```
 
 ```bash
