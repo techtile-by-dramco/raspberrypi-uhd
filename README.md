@@ -41,7 +41,7 @@ cd host
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../ -DENABLE_C_API=O -DENABLE_PYTHON_API=ON
-make -j4
+make -j6
 make test
 sudo make install
 ```bash
