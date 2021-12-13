@@ -44,7 +44,7 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../ -DENABLE_C_API=O -DENABLE_PYTHON_API
 make -j6
 make test
 sudo make install
-```bash
+
 sudo ldconfig
 sudo uhd_images_downloader
 cd ~/uhd/host/utils
