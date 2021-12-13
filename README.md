@@ -36,7 +36,7 @@ python3-gi-cairo libeigen3-dev libsndfile1-dev xterm
 cd
 git clone https://github.com/EttusResearch/uhd.git
 cd ~/uhd
-git checkout v4.1.0.4
+git checkout v4.1.0.4 #checkout wanted version
 cd host
 mkdir build
 cd build
