@@ -56,6 +56,25 @@ make -j6
 make test
 sudo make install
 
+# Check if right sym link
+LIBUHD_PATH="/usr/local/lib/libuhd.so"  # Adjust this path if necessary
+
+# Check if the file is a symlink
+if [ -L "$LIBUHD_PATH" ]; then
+    # Get the target of the symlink
+    TARGET=$(readlink "$LIBUHD_PATH")
+    
+    # Check if the target is libuhd.so.4.7.0
+    if [ "$TARGET" = "libuhd.so.4.7.0" ]; then
+        echo "$LIBUHD_PATH is a symlink to libuhd.so.4.7.0"
+    else
+        echo "Error: $LIBUHD_PATH is a symlink, but it points to $TARGET"  >&2
+    fi
+else
+    echo "Error: $LIBUHD_PATH is not a symlink" >&2
+fi
+
+
 
 sudo ldconfig
 sudo uhd_images_downloader
