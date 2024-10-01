@@ -54,7 +54,7 @@ cd build
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../ -DENABLE_C_API=O -DENABLE_PYTHON_API=ON -DENABLE_LIBUHD=ON -DENABLE_PYMOD_UTILS=ON -DENABLE_B100=OFF -DENABLE_USRP1=OFF -DENABLE_USRP2=OFF -DENABLE_X300=OFF -DENABLE_N300=OFF  -DENABLE_N320=OFF -DENABLE_E300=OFF -DENABLE_E320=OFF -DENABLE_X400=OFF -DUHD_LOG_MIN_LEVEL=1
 make -j6
 make test
-sudo make install
+sudo make -j6 install
 
 # Check if right sym link
 LIBUHD_PATH="/usr/local/lib/libuhd.so"  # Adjust this path if necessary
