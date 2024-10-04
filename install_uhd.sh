@@ -1,5 +1,5 @@
 sudo apt update --allow-releaseinfo-change
-sudo apt upgrade --yes -o Dpkg::Options::="--force-confold"
+sudo UCF_FORCE_CONFFOLD=1 apt upgrade --yes -o Dpkg::Options::="--force-confold"
 
 sudo UCF_FORCE_CONFFOLD=1 apt install -y openssh-server
 
