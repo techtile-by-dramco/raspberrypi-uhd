@@ -1,6 +1,7 @@
 sudo apt update --allow-releaseinfo-change
 sudo apt upgrade --yes -o Dpkg::Options::="--force-confold"
 
+sudo UCF_FORCE_CONFFOLD=1 apt install -y openssh-server
 
 sudo UCF_FORCE_CONFFOLD=1 apt install --yes -o Dpkg::Options::="--force-confold" git cmake g++ libboost-all-dev libgmp-dev swig python3-numpy \
 python3-mako python3-sphinx python3-lxml doxygen libfftw3-dev \
