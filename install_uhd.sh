@@ -81,3 +81,8 @@ cd ~/uhd/host/utils
 sudo cp uhd-usrp.rules /etc/udev/rules.d/
 sudo udevadm control --reload-rules
 sudo udevadm trigger
+
+git clone https://github.com/techtile-by-dramco/experiments
+sudo chmod +x experiments/00_calibration/014_pilot_techtile/usrp-cal.sh
+sudo chmod +x experiments/00_calibration/014_pilot_techtile/usrp-cal-nobf.sh
+
