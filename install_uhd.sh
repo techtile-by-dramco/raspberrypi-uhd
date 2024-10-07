@@ -1,7 +1,8 @@
 sudo apt update --allow-releaseinfo-change
 sudo UCF_FORCE_CONFFOLD=1 apt install -y openssh-server
 
-sudo UCF_FORCE_CONFFOLD=1 apt upgrade --yes -o Dpkg::Options::="--force-confold"
+sudo DEBIAN_FRONTEND=noninteractive UCF_FORCE_CONFFOLD=1 apt --yes --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
+sudo DEBIAN_FRONTEND=noninteractive UCF_FORCE_CONFFOLD=1 apt --yes --force-yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade
 
 
 
