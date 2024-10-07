@@ -4,8 +4,6 @@ sudo UCF_FORCE_CONFFOLD=1 apt install -y openssh-server
 sudo DEBIAN_FRONTEND=noninteractive UCF_FORCE_CONFFOLD=1 apt --yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
 sudo DEBIAN_FRONTEND=noninteractive UCF_FORCE_CONFFOLD=1 apt --yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade
 
-
-
 sudo DEBIAN_FRONTEND=noninteractive UCF_FORCE_CONFFOLD=1 apt install --yes -o Dpkg::Options::="--force-confold" git cmake g++ libboost-all-dev libgmp-dev swig python3-numpy \
 python3-mako python3-sphinx python3-lxml doxygen libfftw3-dev \
 libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 \
