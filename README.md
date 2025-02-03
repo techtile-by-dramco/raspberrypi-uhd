@@ -91,6 +91,7 @@ uhd_usrp_probe
 ```
 
 
+## Installing VOLK
 
 ```bash
 cd
@@ -98,7 +99,6 @@ git clone --recursive https://github.com/gnuradio/volk.git
 cd volk
 mkdir build && cd build
 cmake  -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 -DCMAKE_TOOLCHAIN_FILE=../cmake/Toolchains/arm_cortex_a76_hardfp_native.cmake .. 
-# make -j4 might be faster
 make -j6
 make test
 sudo make install
