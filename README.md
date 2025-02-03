@@ -23,7 +23,7 @@ sudo apt-get update && sudo apt-get upgrade
 ```bash
 sudo apt update --allow-releaseinfo-change
 sudo apt upgrade --yes -o Dpkg::Options::="--force-confold"
-sudo apt install --yes -o Dpkg::Options::="--force-confold" git cmake g++ libboost-all-dev libgmp-dev swig python3-numpy build-essential\
+sudo apt install --yes -o Dpkg::Options::="--force-confold" git cmake build-essential libboost-all-dev libgmp-dev swig python3-numpy\
 python3-mako python3-sphinx python3-lxml doxygen libfftw3-dev \
 libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 \
 liblog4cpp5-dev libzmq3-dev python3-yaml python3-click python3-click-plugins \
@@ -41,12 +41,14 @@ git config --global user.name "GillesC"
 
 git -C ./uhd/ pull || git clone https://github.com/EttusResearch/uhd.git
 cd uhd
-git checkout UHD-4.7
+# git checkout UHD-4.7
+
+git checkout UHD-4.8
 
 
-wget https://raw.githubusercontent.com/techtile-by-dramco/raspberrypi-uhd/refs/heads/master/iface.patch
-git apply --stat ./iface.patch
-git am < ./iface.patch
+# wget https://raw.githubusercontent.com/techtile-by-dramco/raspberrypi-uhd/refs/heads/master/iface.patch
+# git apply --stat ./iface.patch
+# git am < ./iface.patch
 
 cd ~/uhd/host
 mkdir -p build
