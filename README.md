@@ -23,7 +23,7 @@ sudo apt-get update && sudo apt-get upgrade
 ```bash
 sudo apt update --allow-releaseinfo-change
 sudo apt upgrade --yes -o Dpkg::Options::="--force-confold"
-sudo apt install --yes -o Dpkg::Options::="--force-confold" git cmake g++ libboost-all-dev libgmp-dev swig python3-numpy \
+sudo apt install --yes -o Dpkg::Options::="--force-confold" git cmake g++ libboost-all-dev libgmp-dev swig python3-numpy build-essential\
 python3-mako python3-sphinx python3-lxml doxygen libfftw3-dev \
 libsdl1.2-dev libgsl-dev libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 \
 liblog4cpp5-dev libzmq3-dev python3-yaml python3-click python3-click-plugins \
