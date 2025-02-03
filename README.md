@@ -105,10 +105,12 @@ make -j6
 make test
 sudo make install
 
+sudo ldconfig
+
 # volk_profile will profile your system so that the best kernel is used
 volk_profile
 
-sudo ldconfig
+
 ```
 
 ```bash
