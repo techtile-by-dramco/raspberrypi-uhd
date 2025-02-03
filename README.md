@@ -103,6 +103,7 @@ make -j6
 make test
 sudo make install
 sudo ldconfig
+```
 
 ```bash
 python3 -m pip install pytest numpy scipy
