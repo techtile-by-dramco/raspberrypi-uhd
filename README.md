@@ -67,8 +67,8 @@ if [ -L "$LIBUHD_PATH" ]; then
     TARGET=$(readlink "$LIBUHD_PATH")
     
     # Check if the target is libuhd.so.4.7.0
-    if [ "$TARGET" = "libuhd.so.4.7.0" ]; then
-        echo "$LIBUHD_PATH is a symlink to libuhd.so.4.7.0"
+    if [ "$TARGET" = "libuhd.so.4.8.0" ]; then
+        echo "$LIBUHD_PATH is a symlink to libuhd.so.4.8.0"
     else
         echo "Error: $LIBUHD_PATH is a symlink, but it points to $TARGET"  >&2
     fi
