@@ -17,7 +17,7 @@ Update the list of available packages and their versions (it does not install or
 Execute upgrade installs newer versions of the packages you have. After updating the lists, the package manager knows about available updates for the software you have installed. This is why you first want to update.
 
 ```bash
-sudo apt-get update && sudo apt-get upgrade
+sudo apt update && sudo apt upgrade
 ```
 
 ```bash
