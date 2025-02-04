@@ -101,7 +101,7 @@ cd
 git clone --recursive https://github.com/gnuradio/volk.git
 cd volk
 mkdir build && cd build
-cmake  -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 ../
+cmake ../ #  -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 ../
 make -j6
 make test
 sudo make install
