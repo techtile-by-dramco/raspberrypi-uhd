@@ -36,10 +36,11 @@ python3-gi-cairo libeigen3-dev libsndfile1-dev xterm python3-ruamel.yaml
 ```bash
 cd ~
 
-git config --global user.email "callebaut.gilles@gmail.com"
-git config --global user.name "GillesC"
+# git config --global user.email "callebaut.gilles@gmail.com"
+# git config --global user.name "GillesC"
 
-git -C ./uhd/ pull || git clone https://github.com/EttusResearch/uhd.git
+# git -C ./uhd/ pull ||
+git clone https://github.com/EttusResearch/uhd.git
 cd uhd
 # git checkout UHD-4.7
 
@@ -59,22 +60,22 @@ make test
 sudo make -j6 install
 
 # Check if right sym link
-LIBUHD_PATH="/usr/local/lib/libuhd.so"  # Adjust this path if necessary
+# LIBUHD_PATH="/usr/local/lib/libuhd.so"  # Adjust this path if necessary
 
 # Check if the file is a symlink
-if [ -L "$LIBUHD_PATH" ]; then
-    # Get the target of the symlink
-    TARGET=$(readlink "$LIBUHD_PATH")
+#   if [ -L "$LIBUHD_PATH" ]; then
+#     # Get the target of the symlink
+#     TARGET=$(readlink "$LIBUHD_PATH")
     
-    # Check if the target is libuhd.so.4.7.0
-    if [ "$TARGET" = "libuhd.so.4.8.0" ]; then
-        echo "$LIBUHD_PATH is a symlink to libuhd.so.4.8.0"
-    else
-        echo "Error: $LIBUHD_PATH is a symlink, but it points to $TARGET"  >&2
-    fi
-else
-    echo "Error: $LIBUHD_PATH is not a symlink" >&2
-fi
+#     # Check if the target is libuhd.so.4.7.0
+#     if [ "$TARGET" = "libuhd.so.4.8.0" ]; then
+#         echo "$LIBUHD_PATH is a symlink to libuhd.so.4.8.0"
+#     else
+#         echo "Error: $LIBUHD_PATH is a symlink, but it points to $TARGET"  >&2
+#     fi
+# else
+#     echo "Error: $LIBUHD_PATH is not a symlink" >&2
+# fi
 
 
 
