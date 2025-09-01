@@ -44,7 +44,7 @@ git clone https://github.com/EttusResearch/uhd.git
 cd uhd
 # git checkout UHD-4.7
 
-git checkout UHD-4.8
+git checkout UHD-4.9
 
 
 # wget https://raw.githubusercontent.com/techtile-by-dramco/raspberrypi-uhd/refs/heads/master/iface.patch
