@@ -93,6 +93,12 @@ sudo udevadm trigger
 uhd_usrp_probe
 ```
 
+**Follow the steps up to this point**
+
+# Search for devices
+```bash
+uhd_find_devices
+```
 
 ## Installing VOLK
 
