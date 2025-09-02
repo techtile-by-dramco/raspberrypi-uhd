@@ -25,12 +25,9 @@ python3-gi-cairo libeigen3-dev libsndfile1-dev xterm python3-ruamel.yaml
 
 ```bash
 cd ~
-
 git clone https://github.com/EttusResearch/uhd.git
 cd uhd
-
 git checkout UHD-4.9
-
 cd ~/uhd/host
 mkdir -p build
 cd build
@@ -38,7 +35,6 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr/local ../ -DENABLE_C_API=O -DENABLE_PYTHON_API
 make -j6
 make test
 sudo make -j6 install
-
 sudo ldconfig
 sudo uhd_images_downloader
 cd ~/uhd/host/utils
