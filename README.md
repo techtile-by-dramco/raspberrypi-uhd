@@ -1,4 +1,4 @@
-# Installation guide UHD on RPI 4
+# Installation guide UHD on RPI 4 & 5
 
 # Update 2025-09-02
 
