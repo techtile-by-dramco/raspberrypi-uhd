@@ -64,6 +64,19 @@ sudo apt install libuhd-dev uhd-host python3-uhd -y
 export UHD_IMAGES_DIR=/usr/local/share/uhd/images
 ```
 
+## Test tx_waveforms script
+```bash
+mkdir ~/examples
+cp uhd/host/examples/python/tx_waveforms.py examples
+
+```
+❗CHANGE tx_waveform.py (due to problems with the file)❗
+
+```bash
+python3 examples/tx_waveforms.py  --args "type=b200" --freq 1e9 --rate 1e6 --duration 10 --channels 0 --wave-freq 0e5 --wave-ampl 0.8 --gain 0
+
+```
+
 **Follow the steps up to this point**
 
 # OLD way
