@@ -48,7 +48,7 @@ sudo udevadm trigger
 ```
 
 
-#3 restart terminal
+## restart terminal
 ```bash
 uhd_usrp_probe
 ```
