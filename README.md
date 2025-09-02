@@ -44,12 +44,10 @@ sudo udevadm trigger
 ```
 
 
-## restart terminal
+## Restart terminal
 ```bash
 uhd_usrp_probe
 ```
-
-**Follow the steps up to this point**
 
 ## Search for devices
 ```bash
@@ -66,6 +64,7 @@ sudo apt install libuhd-dev uhd-host python3-uhd -y
 export UHD_IMAGES_DIR=/usr/local/share/uhd/image
 ```
 
+**Follow the steps up to this point**
 
 # OLD way
 
