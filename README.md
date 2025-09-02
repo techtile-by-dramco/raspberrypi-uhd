@@ -61,7 +61,7 @@ sudo apt install libuhd-dev uhd-host python3-uhd -y
 
 ## Update image location
 ```bash
-export UHD_IMAGES_DIR=/usr/local/share/uhd/image
+export UHD_IMAGES_DIR=/usr/local/share/uhd/images
 ```
 
 **Follow the steps up to this point**
