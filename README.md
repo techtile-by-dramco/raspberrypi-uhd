@@ -65,6 +65,7 @@ export UHD_IMAGES_DIR=/usr/local/share/uhd/images
 ```
 
 ## Test tx_waveforms script
+Copy example script to new folder "examples"
 ```bash
 mkdir ~/examples
 cp uhd/host/examples/python/tx_waveforms.py examples
