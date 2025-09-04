@@ -1,6 +1,4 @@
-# Installation guide UHD on RPI 4 & 5
-
-# Update 2025-09-02
+# Installation guide UHD on RPI 4 & 5 [Update 2025-09-02]
 
 ## Update and Upgrade
 Update the list of available packages and their versions (it does not install or upgrade any packages).
