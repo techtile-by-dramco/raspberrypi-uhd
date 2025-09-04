@@ -77,8 +77,9 @@ cp uhd/host/examples/python/tx_waveforms.py examples
 python3 examples/tx_waveforms.py  --args "type=b200" --freq 1e9 --rate 1e6 --duration 10 --channels 0 --wave-freq 0e5 --wave-ampl 0.8 --gain 0
 
 ```
-
+<hr style="width:100%;text-align:left;background-color:grey;margin-left:0; border-style: none; height: 5px;">
 **Follow the steps up to this point**
+<hr style="width:100%;text-align:left;background-color:grey;margin-left:0; border-style: none; height: 5px;">
 
 # Samba
 
@@ -91,6 +92,7 @@ python3 examples/tx_waveforms.py  --args "type=b200" --freq 1e9 --rate 1e6 --dur
    ```
 2. Mount network drive \\IP_ADDRESS\pi and fill in credentials
 
+<hr style="width:100%;text-align:left;background-color:grey;margin-left:0; border-style: none; height: 5px;">
 
 # OLD way
 
@@ -250,8 +252,6 @@ export PYTHONPATH=/usr/local/lib/python3/dist-packages
 
 source ~/.bashrc
 ```
-
-
 
 # OLD way
 
