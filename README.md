@@ -84,7 +84,7 @@ python3 examples/tx_waveforms.py  --args "type=b200" --freq 1e9 --rate 1e6 --dur
 1. Change password "Techtile" and execute following commands
    ```
    curl -sSL https://get.docker.com | sh
-   sudo docker run -itd --name samba --restart=unless-stopped -p 139:139 -p 445:445 -v /home/pi:/mount dperson/samba -u "pi;Techtile" -s "pi;/mount;yes;no;no;pi"
+   sudo docker run -itd --name samba --restart=unless-stopped -p 139:139 -p 445:445 -v /home/pi:/mount dperson/samba -u "pi;Techtile229" -s "pi;/mount;yes;no;no;pi"
    sudo chmod 755 /home/pi
    sudo chown pi:pi /home/pi
    ```
