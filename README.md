@@ -41,6 +41,10 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
+Add the following path to PYTHONPATH if the USRP module in UHD cannot be found:
+```bash
+export PYTHONPATH=/usr/local/lib/python3.11/site-packages:$PYTHONPATH
+```
 
 ## Restart terminal
 ```bash
