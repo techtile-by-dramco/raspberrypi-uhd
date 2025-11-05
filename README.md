@@ -39,6 +39,7 @@ cd ~/uhd/host/utils
 sudo cp uhd-usrp.rules /etc/udev/rules.d/
 sudo udevadm control --reload-rules
 sudo udevadm trigger
+cd
 ```
 
 Add the following path to PYTHONPATH if the USRP module in UHD cannot be found:
